@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AoS Game Tracker</string>
+    <string-array name="auxiliaries">
+        <item>The Aggressor</item>
+        <item>Assassinate</item>
+        <item>The Bait</item>
+        <item>Cornered</item>
+        <item>Defender</item>
+        <item>Domination</item>
+        <item>Grudge</item>
+        <item>Headhunter</item>
+        <item>Invader</item>
+        <item>Marked for Death</item>
+        <item>Mass Panic</item>
+        <item>Overwhelm</item>
+        <item>Pillage</item>
+        <item>Prey on the Weak</item>
+        <item>Prized Possession</item>
+        <item>Seize Ground</item>
+        <item>Territorial</item>
+        <item>Vengeful Counter</item>
+    </string-array>
+
+    <string-array name="battleplans">
+        <item>Knife to the Heart</item>
+        <item>Total Conquest</item>
+        <item>Battle for the Pass</item>
+        <item>Startstrike</item>
+        <item>Scorched Earth</item>
+        <item>Total Commitment</item>
+        <item>Focal Points</item>
+        <item>The Better Part of Valor</item>
+        <item>Shifting Objectives</item>
+        <item>Places of Arcane Power</item>
+        <item>The Blades Edge</item>
+        <item>Forcing the Hand</item>
+    </string-array>
+
+    <string-array name="realms">
+        <item>Aqshy</item>
+        <item>Chamon</item>
+        <item>Ghur</item>
+        <item>Ghyran</item>
+        <item>Hysh</item>
+        <item>Shyish</item>
+        <item>Ulgu</item>
+    </string-array>
+</resources>
