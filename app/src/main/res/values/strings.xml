@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">AoS Game Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
     <string-array name="auxiliaries">
         <item>The Aggressor</item>
         <item>Assassinate</item>
