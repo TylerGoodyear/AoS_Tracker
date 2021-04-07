@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.aos_tracker.R
-import com.example.aos_tracker.ui.dashboard.DashboardViewModel
 
 class DashboardFragment : Fragment() {
 
@@ -22,11 +21,13 @@ class DashboardFragment : Fragment() {
     ): View? {
         dashboardViewModel =
                 ViewModelProvider(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        val root = inflater.inflate(R.layout.fragment_runes, container, false)
+        val textView: TextView = root.findViewById(R.id.text_runes_title)
         dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
     }
+
+
 }
