@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_army_select">
+
+    <fragment
+        android:id="@+id/navigation_army_select"
+        android:name="com.example.aos_tracker.ui.armySelect.ArmySelectFragment"
+        android:label="Army Select"
+        tools:layout="@layout/fragment_army"/>
 
     <fragment
         android:id="@+id/navigation_home"
@@ -13,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_runes"
-        android:name="com.example.aos_tracker.ui.dashboard.DashboardFragment"
+        android:name="com.example.aos_tracker.ui.dashboard.RunePageFragment"
         android:label="@string/title_runes"
         tools:layout="@layout/fragment_runes" />
 

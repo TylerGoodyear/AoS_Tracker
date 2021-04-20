@@ -213,4 +213,5 @@
         android:text="-"
         app:layout_constraintStart_toEndOf="@+id/editTextNumber_vp2"
         app:layout_constraintTop_toBottomOf="@+id/textView_vp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

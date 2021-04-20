@@ -3,6 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_runes">Runes</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_army">Army</string>
     <string-array name="auxiliaries">
         <item>The Aggressor</item>
         <item>Assassinate</item>
@@ -37,6 +38,35 @@
         <item>Places of Arcane Power</item>
         <item>The Blades Edge</item>
         <item>Forcing the Hand</item>
+    </string-array>
+
+    <string-array name="armies">
+        <item>Beasts of Chaos</item>
+        <item>Bonesplitterz</item>
+        <item>Cities of Sigmar</item>
+        <item>Daughters of Khaine</item>
+        <item>Flesh Eater Courts</item>
+        <item>Fyreslayers</item>
+        <item>Gloomspite Gitz</item>
+        <item>Idoneth Deepkin</item>
+        <item>Ironjawz</item>
+        <item>Kharadron Overlords</item>
+        <item>Khorne</item>
+        <item>Legion of Azgorh</item>
+        <item>Legions of Nagash</item>
+        <item>Lumineth Realmlords</item>
+        <item>Nighthaunt</item>
+        <item>Nurgle</item>
+        <item>Ogor Mawtribes</item>
+        <item>Ossiarch Bonereapers</item>
+        <item>Seraphon</item>
+        <item>Skaventide</item>
+        <item>Slaanesh</item>
+        <item>Slaves to Darkness</item>
+        <item>Sons of Behemat</item>
+        <item>Stormcast Eternals</item>
+        <item>Sylvaneth</item>
+        <item>Tzeentch</item>
     </string-array>
 
     <string-array name="realms">
