@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.aos_tracker.R
 import com.example.aos_tracker.TrackerActivityViewModel
 
+// This fragment is for the UI elements used to track the Rune mechanic used by some armies.
 class RunePageFragment : Fragment() {
 
     private val viewModel: TrackerActivityViewModel by viewModels( ownerProducer = {requireParentFragment()})

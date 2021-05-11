@@ -12,7 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 
 class MainActivity : AppCompatActivity() {
-
+    // setup an activity-level view model
     private lateinit var activityViewModel: TrackerActivityViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
 }
 
+// Section is currently unused, may be used later if saved states are deemed necessary
 class FragmentStateHelper(val fragmentManager: FragmentManager) {
 
     private val fragmentSavedStates = mutableMapOf<String, Fragment.SavedState?>()

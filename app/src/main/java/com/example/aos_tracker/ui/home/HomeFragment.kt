@@ -12,7 +12,7 @@ import androidx.fragment.app.viewModels
 import com.example.aos_tracker.R
 import com.example.aos_tracker.TrackerActivityViewModel
 
-
+// This fragment contains the UI elements for tracking the generic and some basic army exclusive scores and resources.
 class HomeFragment : Fragment() {
 
     private val viewModel: TrackerActivityViewModel by viewModels( ownerProducer = {requireParentFragment()})
@@ -29,19 +29,19 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //Variables for UI elements
-        var battleplanSpinner = view.findViewById<Spinner>(R.id.spinner_battleplans)
-        var realmSpinner = view.findViewById<Spinner>(R.id.spinner_realm)
-        var firstAuxSpinner = view.findViewById<Spinner>(R.id.spinner_aux1)
-        var secondAuxSpinner = view.findViewById<Spinner>(R.id.spinner_aux2)
-        var cpTextView = view.findViewById<TextView>(R.id.editTextNumber_cp)
-        var vpTextView = view.findViewById<TextView>(R.id.editTextNumber_vp)
-        var nrTextView = view.findViewById<TextView>(R.id.editTextNumber_nr)
-        var firstAuxChkbx = view.findViewById<CheckBox>(R.id.checkBox_aux_1)
-        var secondAuxChkbx = view.findViewById<CheckBox>(R.id.checkBox_aux_2)
-        var optionalResources = view.findViewById<Group>(R.id.numeric_resources)
-        var armyResourceLabel = view.findViewById<TextView>(R.id.textView_numeric_resource)
-        var cpLabel = view.findViewById<TextView>(R.id.textView_cp)
-        var army = viewModel.army
+        val battleplanSpinner = view.findViewById<Spinner>(R.id.spinner_battleplans)
+        val realmSpinner = view.findViewById<Spinner>(R.id.spinner_realm)
+        val firstAuxSpinner = view.findViewById<Spinner>(R.id.spinner_aux1)
+        val secondAuxSpinner = view.findViewById<Spinner>(R.id.spinner_aux2)
+        val cpTextView = view.findViewById<TextView>(R.id.editTextNumber_cp)
+        val vpTextView = view.findViewById<TextView>(R.id.editTextNumber_vp)
+        val nrTextView = view.findViewById<TextView>(R.id.editTextNumber_nr)
+        val firstAuxChkbx = view.findViewById<CheckBox>(R.id.checkBox_aux_1)
+        val secondAuxChkbx = view.findViewById<CheckBox>(R.id.checkBox_aux_2)
+        val optionalResources = view.findViewById<Group>(R.id.numeric_resources)
+        val armyResourceLabel = view.findViewById<TextView>(R.id.textView_numeric_resource)
+        val cpLabel = view.findViewById<TextView>(R.id.textView_cp)
+        val army = viewModel.army
 
         //Pre loading values into applicable UI elements
         battleplanSpinner.setSelection(viewModel.battleplan)
@@ -181,7 +181,12 @@ class HomeFragment : Fragment() {
         Seraphon("Conjuration Points")
     }
 
-    //Checks if any army that uses a third numeric resource is selected, if true makes the third resource's UI elements visible and changes labels to reflect the specific resource.
+    /**
+     *  Checks if any army that uses a third numeric resource is selected, if true makes the third resource's UI elements visible and changes labels to reflect the specific resource.
+     *  @param army The name of the currently selected army
+     *  @param group The group of UI elements associated with the tertiary resource
+     *  @param resourceLabel The label for the tertiary resource, the text will be changed to reflec the needed resource.
+     */
     fun checkArmy(army: String, group: View, resourceLabel: TextView)  {
         when(army) {
             "Big Waaagh", "Slaanesh", "Khorne", "Tzeentch", "Nurgle", "Beasts of Chaos", "Seraphon" -> group.visibility = View.VISIBLE
