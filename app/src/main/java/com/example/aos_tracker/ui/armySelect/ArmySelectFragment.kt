@@ -8,12 +8,15 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.aos_tracker.R
 import com.example.aos_tracker.TrackerActivityViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationMenu
 import com.google.android.material.snackbar.Snackbar
 
 class ArmySelectFragment : Fragment(){
     private val viewModel: TrackerActivityViewModel by viewModels( ownerProducer = {requireParentFragment()})
+
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -26,10 +29,15 @@ class ArmySelectFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var armyList = view.findViewById<ListView>(R.id.army_list)
+        var navMenu =
 
         armyList.setOnItemClickListener {parent, view, position, id ->
             viewModel.army = armyList.getItemAtPosition(position).toString()
             Snackbar.make(parent, viewModel.army + " Selected", Snackbar.LENGTH_SHORT).show()
+            if (viewModel.army == "Fyreslayers"){
+
+            }
+
         }
     }
 }

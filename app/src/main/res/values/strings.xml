@@ -2,7 +2,7 @@
     <string name="app_name">AoS Game Tracker</string>
     <string name="title_home">Home</string>
     <string name="title_runes">Runes</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_reminders">Reminders</string>
     <string name="title_army">Army</string>
     <string-array name="auxiliaries">
         <item>The Aggressor</item>
@@ -42,6 +42,7 @@
 
     <string-array name="armies">
         <item>Beasts of Chaos</item>
+        <item>Big Waaagh</item>
         <item>Bonesplitterz</item>
         <item>Cities of Sigmar</item>
         <item>Daughters of Khaine</item>
@@ -77,5 +78,15 @@
         <item>Hysh</item>
         <item>Shyish</item>
         <item>Ulgu</item>
+    </string-array>
+
+    <string-array name="cycle_of_corruption">
+        <item>Unnatural Vitality</item>
+        <item>Fecund Vigour</item>
+        <item>The Burgeoning</item>
+        <item>Plague of Misery</item>
+        <item>Nausious Revulsion</item>
+        <item>Rampant Disease</item>
+        <item>Corrupted Regrowth</item>
     </string-array>
 </resources>

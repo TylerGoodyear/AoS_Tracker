@@ -11,6 +11,7 @@ class TrackerActivityViewModel : ViewModel() {
     var aux2 = 0
     var vp = 0
     var cp = 0
+    var nr = 0
     var aux1_complete = false
     var aux2_complete =  false
 

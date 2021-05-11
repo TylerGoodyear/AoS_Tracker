@@ -6,96 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <Button
-        android:id="@+id/button_cp_inc"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="380dp"
-        android:text="+"
-        app:layout_constraintStart_toEndOf="@+id/button_cp_dec"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_cp_dec"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="4dp"
-        android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber_cp"
-        app:layout_constraintTop_toBottomOf="@+id/textView_cp" />
-
-    <Button
-        android:id="@+id/button_vp_inc"
-        android:layout_width="44dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="58dp"
-        android:text="+"
-        app:layout_constraintStart_toEndOf="@+id/button_vp_dec"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_aux2" />
-
-    <EditText
-        android:id="@+id/editTextNumber_vp2"
-        android:layout_width="80dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="3dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_vp" />
-
-    <CheckBox
-        android:id="@+id/checkBox_aux_2"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="51dp"
-        android:text="Completed?"
-        app:layout_constraintStart_toEndOf="@+id/spinner_aux2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_aux_1" />
-
-    <TextView
-        android:id="@+id/textView_aux_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="44dp"
-        android:text="Second Auxiliary:"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_aux1" />
-
     <Spinner
-        android:id="@+id/spinner_aux2"
+        android:id="@+id/spinner_aux1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:entries="@array/auxiliaries"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_aux_2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_aux_1" />
 
-    <Spinner
-        android:id="@+id/spinner_battleplans"
+    <TextView
+        android:id="@+id/textView_cp"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
-        android:entries="@array/battleplans"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_battleplan" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="6dp"
+        android:text="Command Points"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_vp"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_aux_2" />
 
     <TextView
         android:id="@+id/textView_battleplan"
@@ -103,10 +35,35 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="5dp"
         android:text="Battleplan:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber_cp"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/button_vp_inc"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cp" />
+
+    <Button
+        android:id="@+id/button_cp_inc"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="296dp"
+        android:text="+"
+        app:backgroundTint="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/button_cp_dec"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -121,6 +78,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_battleplans" />
 
+    <Button
+        android:id="@+id/button_nr_dec"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:text="-"
+        app:backgroundTint="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber_nr"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numeric_resource" />
+
+    <EditText
+        android:id="@+id/editTextNumber_vp"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_vp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_aux_2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:text="Completed?"
+        app:layout_constraintStart_toEndOf="@+id/spinner_aux2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_aux_1" />
+
     <Spinner
         android:id="@+id/spinner_realm"
         android:layout_width="wrap_content"
@@ -132,28 +125,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_Realm" />
 
-    <Spinner
-        android:id="@+id/spinner_aux1"
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/numeric_resources"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="editTextNumber_nr, button_nr_dec, button_nr_inc, textView_numeric_resource"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_vp_inc"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="47dp"
+        android:text="+"
+        app:backgroundTint="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/button_vp_dec"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_aux2" />
+
+    <Spinner
+        android:id="@+id/spinner_battleplans"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:entries="@array/auxiliaries"
+        android:layout_marginTop="4dp"
+        android:entries="@array/battleplans"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_aux_1" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_battleplan" />
 
     <TextView
-        android:id="@+id/textView_aux_1"
+        android:id="@+id/textView_numeric_resource"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:text="First Auxiliary:"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="8dp"
+        android:text="Bonus Points"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_realm" />
+        app:layout_constraintTop_toBottomOf="@+id/button_vp_dec" />
 
     <CheckBox
         android:id="@+id/checkBox_aux_1"
@@ -161,7 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="90dp"
         android:text="Completed?"
         app:layout_constraintStart_toEndOf="@+id/spinner_aux1"
         app:layout_constraintTop_toBottomOf="@id/spinner_battleplans" />
@@ -172,46 +187,94 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="17dp"
         android:text="Victory Points"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_aux2" />
 
-    <TextView
-        android:id="@+id/textView_cp"
+    <Button
+        android:id="@+id/button_nr_inc"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="36dp"
+        android:text="+"
+        app:backgroundTint="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/button_nr_dec"
+        app:layout_constraintTop_toBottomOf="@+id/button_vp_inc" />
+
+    <Spinner
+        android:id="@+id/spinner_aux2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:layout_marginLeft="79dp"
-        android:layout_marginTop="19dp"
-        android:text="Command Points"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/auxiliaries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_aux_2" />
+
+    <TextView
+        android:id="@+id/textView_aux_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Second Auxiliary:"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/textView_vp"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_aux_2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_aux1" />
+
+    <TextView
+        android:id="@+id/textView_aux_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="First Auxiliary:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_realm" />
 
     <EditText
-        android:id="@+id/editTextNumber_cp"
+        android:id="@+id/editTextNumber_nr"
         android:layout_width="80dp"
         android:layout_height="43dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="number"
         android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber_vp2"
-        app:layout_constraintTop_toBottomOf="@+id/textView_cp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numeric_resource" />
 
     <Button
         android:id="@+id/button_vp_dec"
         android:layout_width="44dp"
         android:layout_height="47dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
         android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber_vp2"
+        app:backgroundTint="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber_vp"
         app:layout_constraintTop_toBottomOf="@+id/textView_vp" />
+
+    <Button
+        android:id="@+id/button_cp_dec"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:text="-"
+        app:backgroundTint="@color/background"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber_cp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

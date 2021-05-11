@@ -27,6 +27,7 @@ class RunePageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // Variables for each check box
         var furyChkBx = view.findViewById<CheckBox>(R.id.checkBox_rune_fury)
         var heatChkBx = view.findViewById<CheckBox>(R.id.checkBox_rune_heat)
         var steelChkBx = view.findViewById<CheckBox>(R.id.checkBox_rune_steel)
@@ -34,6 +35,7 @@ class RunePageFragment : Fragment() {
         var zealChkBx = view.findViewById<CheckBox>(R.id.checkBox_rune_zeal)
         var farsightChkBx = view.findViewById<CheckBox>(R.id.checkBox_rune_farsight)
 
+        // pre load the current values from teh view model into the appropriate check boxes
         furyChkBx.isChecked = viewModel.runeFury
         heatChkBx.isChecked = viewModel.runeHeat
         steelChkBx.isChecked = viewModel.runeSteel
@@ -41,6 +43,7 @@ class RunePageFragment : Fragment() {
         zealChkBx.isChecked = viewModel.runeZeal
         farsightChkBx.isChecked = viewModel.runeFarsight
 
+        // onClick listeners for each checkbox to update the isChecked status in the view model.
         furyChkBx.setOnClickListener {
             viewModel.runeFury = furyChkBx.isChecked
         }
