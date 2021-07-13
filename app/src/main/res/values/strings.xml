@@ -4,40 +4,37 @@
     <string name="title_runes">Runes</string>
     <string name="title_reminders">Reminders</string>
     <string name="title_army">Army</string>
-    <string-array name="auxiliaries">
-        <item>The Aggressor</item>
-        <item>Assassinate</item>
-        <item>The Bait</item>
-        <item>Cornered</item>
-        <item>Defender</item>
-        <item>Domination</item>
-        <item>Grudge</item>
-        <item>Headhunter</item>
-        <item>Invader</item>
-        <item>Marked for Death</item>
-        <item>Mass Panic</item>
-        <item>Overwhelm</item>
-        <item>Pillage</item>
-        <item>Prey on the Weak</item>
-        <item>Prized Possession</item>
-        <item>Seize Ground</item>
-        <item>Territorial</item>
-        <item>Vengeful Counter</item>
+    <string-array name="tacticals">
+        <item>Aggressive Expansion</item>
+        <item>Bring it Down</item>
+        <item>Broken Ranks</item>
+        <item>Conquer</item>
+        <item>Ferocious Advance</item>
+        <item>Monstrous Takeover</item>
+        <item>Savage Spearhead</item>
+        <item>Slay the Warlord</item>
     </string-array>
 
     <string-array name="battleplans">
-        <item>Knife to the Heart</item>
-        <item>Total Conquest</item>
-        <item>Battle for the Pass</item>
-        <item>Startstrike</item>
-        <item>Scorched Earth</item>
-        <item>Total Commitment</item>
-        <item>Focal Points</item>
-        <item>The Better Part of Valor</item>
-        <item>Shifting Objectives</item>
-        <item>Places of Arcane Power</item>
-        <item>The Blades Edge</item>
-        <item>Forcing the Hand</item>
+        <item>Power Struggle</item>
+        <item>Marking Territory</item>
+        <item>Savage Gains</item>
+        <item>First Blood</item>
+        <item>Power Struggle</item>
+        <item>Survival of the Fittest</item>
+        <item>Tectonic Interference</item>
+        <item>Apex Predators</item>
+        <item>The Vice</item>
+        <item>Tooth and Nail</item>
+        <item>Feral Foray</item>
+        <item>Power in Numbers</item>
+        <item>The Veins of Ghur</item>
+    </string-array>
+
+    <string-array name="grand_strategies">
+        <item>Sever the Head</item>
+        <item>Hold the Line</item>
+        <item>Vendetta</item>
     </string-array>
 
     <string-array name="armies">
@@ -53,8 +50,7 @@
         <item>Ironjawz</item>
         <item>Kharadron Overlords</item>
         <item>Khorne</item>
-        <item>Legion of Azgorh</item>
-        <item>Legions of Nagash</item>
+        <item>Kruelboyz</item>
         <item>Lumineth Realmlords</item>
         <item>Nighthaunt</item>
         <item>Nurgle</item>
@@ -65,6 +61,7 @@
         <item>Slaanesh</item>
         <item>Slaves to Darkness</item>
         <item>Sons of Behemat</item>
+        <item>Soulblight Gravelords</item>
         <item>Stormcast Eternals</item>
         <item>Sylvaneth</item>
         <item>Tzeentch</item>

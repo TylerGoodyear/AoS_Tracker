@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:entries="@array/auxiliaries"
+        android:entries="@array/tacticals"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_aux_1" />
 
@@ -23,11 +23,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="79dp"
         android:layout_marginLeft="79dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="84dp"
         android:text="Command Points"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/textView_vp"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_aux_2" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_aux1" />
 
     <TextView
         android:id="@+id/textView_battleplan"
@@ -60,23 +60,11 @@
         android:layout_height="47dp"
         android:layout_marginStart="9dp"
         android:layout_marginLeft="9dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="6dp"
         android:text="+"
         app:backgroundTint="@color/background"
         app:layout_constraintStart_toEndOf="@+id/button_cp_dec"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView_Realm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:text="Realm:"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_battleplans" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_cp" />
 
     <Button
         android:id="@+id/button_nr_dec"
@@ -103,34 +91,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_vp" />
 
-    <CheckBox
-        android:id="@+id/checkBox_aux_2"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="16dp"
-        android:text="Completed?"
-        app:layout_constraintStart_toEndOf="@+id/spinner_aux2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_aux_1" />
-
-    <Spinner
-        android:id="@+id/spinner_realm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
-        android:entries="@array/realms"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Realm" />
-
     <androidx.constraintlayout.widget.Group
         android:id="@+id/numeric_resources"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        app:constraint_referenced_ids="editTextNumber_nr, button_nr_dec, button_nr_inc, textView_numeric_resource"
+        app:constraint_referenced_ids=" button_nr_dec, button_nr_inc, textView_numeric_resource,editTextNumber_nr"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="gone" />
@@ -170,17 +136,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_vp_dec" />
 
-    <CheckBox
-        android:id="@+id/checkBox_aux_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="90dp"
-        android:text="Completed?"
-        app:layout_constraintStart_toEndOf="@+id/spinner_aux1"
-        app:layout_constraintTop_toBottomOf="@id/spinner_battleplans" />
-
     <TextView
         android:id="@+id/textView_vp"
         android:layout_width="wrap_content"
@@ -212,7 +167,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:entries="@array/auxiliaries"
+        android:entries="@array/grand_strategies"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_aux_2" />
 
@@ -223,7 +178,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:text="Second Auxiliary:"
+        android:text="Grand Strategy:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_aux1" />
@@ -234,11 +189,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:text="First Auxiliary:"
+        android:layout_marginTop="9dp"
+        android:text="Battle Tactic:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_realm" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_battleplans" />
 
     <EditText
         android:id="@+id/editTextNumber_nr"
