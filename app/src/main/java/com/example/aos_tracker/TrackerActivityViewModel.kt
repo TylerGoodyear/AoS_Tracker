@@ -12,8 +12,6 @@ class TrackerActivityViewModel : ViewModel() {
     var vp = 0
     var cp = 0
     var nr = 0
-    var aux1_complete = false
-    var aux2_complete =  false
 
     // below are the boolean values for the Fyreslayers runes page
     var runeFury = false

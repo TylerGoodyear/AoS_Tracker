@@ -30,14 +30,11 @@ class HomeFragment : Fragment() {
 
         //Variables for UI elements
         val battleplanSpinner = view.findViewById<Spinner>(R.id.spinner_battleplans)
-        val realmSpinner = view.findViewById<Spinner>(R.id.spinner_realm)
         val firstAuxSpinner = view.findViewById<Spinner>(R.id.spinner_aux1)
         val secondAuxSpinner = view.findViewById<Spinner>(R.id.spinner_aux2)
         val cpTextView = view.findViewById<TextView>(R.id.editTextNumber_cp)
         val vpTextView = view.findViewById<TextView>(R.id.editTextNumber_vp)
         val nrTextView = view.findViewById<TextView>(R.id.editTextNumber_nr)
-        val firstAuxChkbx = view.findViewById<CheckBox>(R.id.checkBox_aux_1)
-        val secondAuxChkbx = view.findViewById<CheckBox>(R.id.checkBox_aux_2)
         val optionalResources = view.findViewById<Group>(R.id.numeric_resources)
         val armyResourceLabel = view.findViewById<TextView>(R.id.textView_numeric_resource)
         val cpLabel = view.findViewById<TextView>(R.id.textView_cp)
@@ -45,14 +42,11 @@ class HomeFragment : Fragment() {
 
         //Pre loading values into applicable UI elements
         battleplanSpinner.setSelection(viewModel.battleplan)
-        realmSpinner.setSelection(viewModel.realm)
         firstAuxSpinner.setSelection(viewModel.aux1)
         secondAuxSpinner.setSelection(viewModel.aux2)
         cpTextView.text = viewModel.cp.toString()
         vpTextView.text = viewModel.vp.toString()
         nrTextView.text = viewModel.nr.toString()
-        firstAuxChkbx.isChecked = viewModel.aux1_complete
-        secondAuxChkbx.isChecked = viewModel.aux2_complete
 
         //Bonereapers replaces the command point mechanic with their own mechanic, so if bonereapers is selected this will change the command points label to match
         if (army == "Ossiarch Bonereapers") {
@@ -74,16 +68,7 @@ class HomeFragment : Fragment() {
             }
         }
 
-        // Loads the newly selected realm into the view model
-        realmSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                viewModel.realm = realmSpinner.selectedItemPosition
-            }
 
-            override fun onNothingSelected(parent: AdapterView<*>) {
-
-            }
-        }
 
         // Loads the newly selected auxiliary into the view model
         firstAuxSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -108,16 +93,7 @@ class HomeFragment : Fragment() {
             }
         }
 
-        // loads the new isChecked status into the view model on click
-        firstAuxChkbx.setOnClickListener{
-            viewModel.aux1_complete = firstAuxChkbx.isChecked
-        }
 
-        // Same as above but for second auxiliary
-        secondAuxChkbx.setOnClickListener {
-            viewModel.aux2_complete = secondAuxChkbx.isChecked
-            Log.i("ViewModel","value: " + viewModel.aux2_complete)
-        }
 
         // when the increment button is clicked. gets the current value of the victory point counter, increments it by 1 and updates the value in the counter and view model
         view.findViewById<Button>(R.id.button_vp_inc).setOnClickListener {
